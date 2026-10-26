@@ -1,9 +1,14 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev docs",
+    "dev:latest": "node scripts/dev_version.mjs latest",
+    "dev:tankbotaI": "node scripts/dev_version.mjs tankbotaI",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "docs:stage-main": "node scripts/stage_main_site.mjs"
+    "docs:stage-main": "node scripts/stage_main_site.mjs",
+    "build:latest": "node scripts/build_version.mjs latest",
+    "build:tankbotaI": "node scripts/build_version.mjs tankbotaI",
+    "build:all": "node scripts/build_version.mjs latest && node scripts/build_version.mjs tankbotaI"
   },
   "dependencies": {
     "vitepress": "^1.6.4"
